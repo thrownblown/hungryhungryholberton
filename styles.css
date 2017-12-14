@@ -17,12 +17,15 @@ article {
 aside {
     flex: 1;
     overflow-y: auto;
+    text-overflow: wrap;
+      word-wrap: break-word;
+
 }
 
 #map-container {
-    height: 80%;
-    width: 70%;
-    position: absolute;
+    height: 100%;
+    width: 100%;
+    /*position: absolute;*/
 }
 
 .spacer { height: 60px }
