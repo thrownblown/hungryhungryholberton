@@ -1,0 +1,33 @@
+body, main {
+    display: flex;
+}
+
+body { flex-direction: column; }
+
+main { 
+    flex-direction: row;
+    flex: auto;
+}
+
+article { 
+    flex: 2;
+    overflow-y: auto; /*removed for map*/
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+
+#map-container {
+    height: 80%;
+    width: 70%;
+    position: absolute;
+}
+
+.spacer { height: 60px }
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
