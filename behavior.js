@@ -4,13 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     thumbnailElement.addEventListener("click", function() {
 
-        var thumb_click = confirm("I see you there, clickin that img!");
-
-        if (thumb_click){
-            thumbnailElement.className = "";
-        } else {
-            thumbnailElement.className = "small";
-        }
+        alert("I see you there, clickin that img!");
 
         if (thumbnailElement.className == "") {
             thumbnailElement.className = "small";
@@ -48,6 +42,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var overlay_ctrl = new L.control.layers(overlays).addTo(map);
     overlay_ctrl.expand();
 
+
+    $("[name='leaflet-base-layers']").change( function () {
+        var overlay_name = $(this).parent().text().slice(1);
+        var overlay = overlays[overlay_name];
+        map.fitBounds(overlay.getBounds());
+    });
+
     var restaurants = yelp_results.businesses;
     for (var i = 0; i < restaurants.length; i ++) {
         var coords = restaurants[i].coordinates;
@@ -66,12 +67,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
     function resizeFix(){
-        // var h = $(window).height() - 150 ;
-        // // var h = $('#main').height() - 50 ;
+        var h = $(window).height() - 30;
+        // var h = $('#main').height();
         // $('#main').height(h + 'px');
-        // $('#map-container').height(h + 'px');
-        // var w = $('#main').width();
-        // $('#map-container').width(w + 'px');
+        $('#map-container').height(h + 'px');
+        // var w = $(window).width() - 30;
+        var w = $('#main').width() - 30;
+        $('#map-container').width(w + 'px');
         map.invalidateSize();
     }
 

@@ -12,6 +12,7 @@ main {
 article { 
     flex: 2;
     overflow-y: auto; /*removed for map*/
+
 }
 
 aside {
@@ -23,9 +24,9 @@ aside {
 }
 
 #map-container {
-    height: 100%;
-    width: 100%;
-    /*position: absolute;*/
+    height: 66%;
+    width: 66%;
+    position: absolute;
 }
 
 .spacer { height: 60px }
