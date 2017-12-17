@@ -1,30 +1,62 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>
-        Hungry Hungry Holberton
-    </title>
-    <!-- meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <title>
+            Hungry Hungry Holberton
+        </title>
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-    <link href="https://www.holbertonschool.com/level2/holberton.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+        <meta property="og:url"           content="http://46.226.109.172/index.html" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Hungry Hungry Holberton" />
+        <meta property="og:description"   content="Feed me quickly" />
+        <meta property="og:image"         content="http://46.226.109.172/hippomeme0.png" />
 
-  </head>
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+        <link href="https://www.holbertonschool.com/level2/holberton.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
 
-  <body class="works_on_smartphone">
-    <header>
-        <ul>
-            <li class="logo">ⶼ</li>
-            <li><a href="index.html">Hungry Hungry Holberton</a></li>
-            <li><a href="tweets.html">Tweets</a></li>
-        </ul>
-    </header>
+    </head>
+
+    <body class="works_on_smartphone">
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=138452430138366';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <header class="blue_bkg">
+            <div class="right">
+                <div class="fb-share-button"
+                data-href="http://46.226.109.172/index.html"
+                data-layout="button_count"
+                data-size="large"
+                data-mobile-iframe="true">
+                    <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F46.226.109.172%2Findex.html&amp;src=sdkpreparse">
+                        Share
+                    </a>
+                </div>
+
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+                data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                <a data-pin-do="buttonPin" data-pin-tall="true" data-pin-round="true" href="https://www.pinterest.com/pin/create/button/?url=http%3A%2F%2F46.226.109.172%2Findex.html&media=https%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=Next%20stop%3A%20Pinterest"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png" /></a>
+            </div>
+            <ul>
+                <li class="logo">ⶼ</li>
+                <li><a href="index.html">Hungry Hungry Holberton</a></li>
+                <li><a href="tweets.html">Tweets</a></li>
+            </ul>
+        </header>
     <main id="main">
-        <article>
+        <article class="green_bkg">
 
             <blockquote class="twitter-tweet" data-lang="en">
                 <p lang="en" dir="ltr">
@@ -72,14 +104,7 @@
         Made by <a href="https://twitter.com/thrownblown" target="_blank">marius farioletti</a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a>.
     </footer>
 
-
     <!-- JS -->
-<!--     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
-
-    <script src="isochrone.js"></script>
-    <script src="yelp.js"></script>
-    <script src="behavior.js"></script> -->
 
   </body>
 </html>
