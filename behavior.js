@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     thumbnailElement.addEventListener("click", function() {
 
-        alert("I see you there, clickin that img! Try that again, I dare you");
+        alert("I see you there, clickin that img! Try that again, I dare you...");
 
         if (thumbnailElement.className == "") {
             thumbnailElement.className = "small";

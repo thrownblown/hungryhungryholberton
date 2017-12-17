@@ -29,9 +29,11 @@ aside {
     position: absolute;
 }
 
-.spacer { height: 60px }
-
 html,body{
     margin: 0;
     padding: 0;
 }
+
+.green_bkg { background-color: #90EE90 }
+.blue_bkg { background-color: #87CEFA }
+.yellow_bkg { background-color: #EEE8AA }
